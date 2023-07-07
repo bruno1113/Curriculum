@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Vargas Balderas Bruno Valmiki ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Image/monitor.png"/>
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="animateprogress.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>CV Online</title>
+</head>
+
+<body>
+    <!-- navegacion inicio -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones"
+            aria-controls="opciones" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="opciones">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item ">
+                    <a class="nav-link " aria-current="page" href="#div-principal"> <img src="Image/hogar.png" alt=""> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobremi"> <img src="Image/about.png" alt=""> Sobre mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#especialidades"> <img src="Image/especialista.png" alt=""> Especialidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formacion"> <img src="Image/graduacion.png" alt=""> Formacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectos"> <img src="Image/proyectos.png" alt=""> Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#referencias"> <img src="Image/personas.png" alt=""> Referencias</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    
+    <div class="background">
+        <img src="Image/fondo.jpg" class="img-fluid " alt="Fotografia">
+    </div>
+
+    <div class="offset heading-content text-center d-flex justify-content-center align-items-center" id="div-principal">
+        <div class="bg-secondary w-50 " id="cuadro" >
+            <h5 class="holasoy">Hola soy</h5>
+            <h1 class="bruno">Bruno Vargas</h1>
+            <p class="curriculum">(Y este es mi Curriculum)</p>
+ 
+        </div>
+           </div>
+
+
+    <!--------------------------- sobre mi inicio ----------------->
+
+    <div id="sobremi" class="offset container mt-5 mb-5">
+        <div class="post-heading text-center">
+            <h3 class="display-4 font-weight-bold">Perfil</h3>
+            <hr class="w-50 mx-auto pb-1">
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-s-12 mt-3" align="center">
+                <img src="Image/foto.jpg" width="80%" class="img-fluid" alt="Foto2">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-s-12 mt-3 pt-4">
+                <h2>Bruno Valmiki Vargas Balderas</h2>
+                <hr class="pb-1">
+                <p class="perfil"><strong>Residencia: </strong> Tizayuca, Hidalgo </p>
+                <p class="perfil"><strong>Edad : </strong>  26 años</p>
+                <p class="perfil">Con gusto en el desarrollo de tecnologías de diseño web y bases de datos,
+                    implementando los nuevos desarrollos tecnológicos que salen constantemente.
+                    Manejo de lenguajes como Java o Python para el desarrollo de otros tipos de proyecto. 
+                </p>
+                <button class="btn w-50">
+                    <a href="Curriculum.pdf"  download="Curriculum.pdf">Curriculum   <i class="fa-solid fa-download">  </i></a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!------------------- sobre mi final------------------->
+    <!-------------------especialidades incio ----------------->
+    <section id="skills">
+        <div id="especialidades" class="offset container mt-1 mb-1">
+            <div class="post-heading text-center">
+                <h3 class="display-4 font-weight-bold">Especialidades</h3>
+                <hr class="w-50 mx-auto pb-2">
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 mt-3 ">
+
+                    <div class="center">
+                        <legend>Bases de datos</legend>
+                        <div class="progress">
+                            <p>(MySQL) </p>
+                            <progress id="bases" max="100" value="75"></progress>
+                            <span></span>
+                        </div>
+
+                        <legend>Diseño de paginas Web</legend>
+                        <div class="progress">
+                            <p>(HTML y CSS) </p>
+                            <progress id="diseño" max="100" value="80"></progress>
+                            <span></span>
+                        </div>
+
+                        <div class="clear"></div>
+                        <legend>Conocimiento intermedio de JavaScript</legend>
+                        <div class="progress">
+                            <p>(JavaScript) </p>
+                            <progress id="javascript" max="100" value="75"></progress>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 mt-3 ">
+
+                    <legend>Conocimiento intermedio de PHP</legend>
+                    <div class="progress">
+                        <p>(PHP) </p>
+                        <progress id="php" max="100" value="70"></progress>
+                        <span></span>
+                    </div>
+
+
+                    <legend>Conocimiento intermedio de Java</legend>
+                    <div class="progress">
+                        <p>(Java) </p>
+                        <progress id="java" max="100" value="70"></progress>
+                        <span></span>
+                    </div>
+
+                    <div class="clear"></div>
+                    <legend>Conocimiento intermedio en Inglés</legend>
+                    <div class="progress">
+                        <p>Inglés </p>
+                        <progress id="ingles" max="100" value="75"></progress>
+                        <span></span>
+                    </div>
+
+                    <div class="progress">
+                        <input type="button" id="boton" value="Reload" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------- especialidades final------------------->
+
+    <!-------------------formacion incio ----------------->
+    <div id="formacion" class="offset container mt-5 mb-5">
+        <div class="post-heading text-center">
+            <h3 class="display-4 font-weight-bold">Formación</h3>
+            <hr class="w-50 mx-auto pb-2">
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 mt-5 ">
+                <img src="Image/fondo2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 mt-4 pt-1 ">
+                <ul>
+                                   
+                    <li> Curso de Ingles Quick Learning. <br>
+                        Julio 2017 - Diciembre 2017 
+                    </li>
+                    <br>
+                     <li>
+                         Servicio social realizado en Corporación Educativa (Instituto Canadiense)SC. <br>
+                         Colaboración y Gestión de Material didáctico digital para SC
+                    </li>
+                    <br>
+                    <li>
+                        Prácticas profesionales realizadas en UAEH Centro de Cómputo Académico.<br>
+                        Realización de herramientas y seguimiento para el aprendizaje en el Nivel Medio Superior
+                    </li>
+                    <br>
+                    <li>
+                        Certificación TOEFL ITP 480 Puntos B1                     
+                    </li>
+                    <br>
+                    <li>Licenciatura en Tecnologías de la Información.<br>
+                    Universidad Autónoma del Estado de Hidalgo. <br>
+                        Julio 2018 - Diciembre 2022
+                    </li>
+                    <br>
+                   
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!------------------- formacion final------------------->
+
+    <!-------------------proyectos incio ----------------->
+    <div class="proyectos">
+        <div id="proyectos" class="offset container mt-5 pt-5 ">
+            <div class="post-heading text-center">
+                <h3 class="display-4 font-weight-bold">Proyectos</h3>
+                <hr class="w-50 mx-auto pb-2">
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 mt-5 ">
+                    <ul>
+                        <li><strong> Librería OASIS </strong> (PHP, CSS, HTML, Bootstrap, JavaScript, MySQL)</li>
+                        <p>(Creación de una pagina web aplicando MVC y CRUD)</p>
+
+                        <li><strong> Página Web “La Central “ </strong>(PHP, Bootstrap, HTML, JavaScript, MySQL)</li>
+                        <p>(Aplicación del método CRUD en una página Web)</p>
+
+                        <li><strong> Proyecto CRUD de playeras </strong> (HTML, CSS, PHP, JavaScript, MySQL)</li>
+                        <p>(Aplicación del método CRUD en una página Web)</p>
+
+                        <li><strong> Creacion de una PWA de mensajeria</strong> (HTML, CSS, JSON, JQuery,IndexDB)</li>
+                        <p>(Aplicación Web Progresiva sobre una caricatura.)</p>
+                        <div align="center">
+                            <a href="https://bruno1113.github.io/southpark/"><img src="Image/screen.jpg" width="60%" alt="Miniatura PWA"></a>
+                        </div>
+
+                    </ul>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 mt-5 ">
+                    <ul>
+                        <li><strong> Préstamo de Juegos Digitales </strong> (LARAVEL 8)</li>
+                        <p>(Aplicación del método CRUD en una página Web)</p>
+
+                        <li><strong> Pagina para Despacho Jurídico </strong> (PHP, CSS3, HTML5, Bootstrap, JavaScript,MySQL)</li>
+                        <p>(Desarrollo de página web publicitaria)</p>
+
+                        <li><strong> Creación de una PWA para IOT </strong>(PHP, CSS3, HTML5, Bootstrap, JavaScript, Json ,MySQL) </li>
+                        <p>(Creacion de una Aplicacion Web Progresiva en Visual Code)</p>
+
+                        <li><strong>Pagina de Ingles para nivel Bachillerato</strong>(HTML5,CSS,Bootstrap,PHP,JavaScript,MySQL)</li>
+                        <p>(Creacion de pagina de Ingles como recurso de refuerzo)</p>
+                        <div align="center">
+                            <a href="#"><img src="Image/proyecto.jpg" width="60%" alt="Miniatura Pagina Web"></a>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------- proyectos final------------------->
+
+    <!--------------------------- Footer ------------------->
+    <footer class="bg-dark text-center text-white" id="referencias">
+        <div class="container p-4">
+            <h5>Redes Sociales</h5>
+            <section class="mb-4">
+                <!------ Twitter ----->
+                <a class="btn btn-outline-light btn-floating m-1" href="mailto:bruno.v.vargas13@gmail.com" role="button"><img src="Image/gmail.png" alt=""></a>
+
+                <!------- Linkedin ----->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/bruno-vargas-balderas-850105233/" title=" role="button"><img src="Image/linkedin.png" alt="LinkedIn"></a>
+
+                <!-------- Github ------->
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/bruno1113/CV.git" role="button"><img src="Image/github.png" alt="GitHub"></a> 
+                <p></p>
+                <p><i class="fa-solid fa-phone"></i>   5586862162</p>
+            </section>
+
+            <!--- Referencias--- -->
+            <section class="mb-4">
+                <h5>Referencias</h5>
+                <hr class="w-20 mx-auto">
+            </section>
+
+            <!--------- lista de referencias ------>
+            <section class="">
+
+                <div class="row">
+        
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                        
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <hr class="w-50 mx-auto">
+                                <p><img src="Image/user.png" alt="">  Nora Balderas Arrieta</p>
+                            </li>
+                            <li>
+                                <p><i class="fa-solid fa-phone"></i>    5527013781</p>
+                            </li>
+                            <li>
+                                 <p><img src="Image/correo.png" alt=""> nora_balderas@yahoo.com</p>
+                            </li>
+                            <li>
+                                <p><img src="Image/titulo.png" alt=""> Maestría en Ingenieria Química Metalúrgica</p>
+                            </li>
+                        </ul>
+                    </div>
+                  
+
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <hr class="w-50 mx-auto">
+                                <p><img src="Image/user.png" alt="">  Israel Acuña Galvan</p>
+                            </li>
+                            <li>
+                                <p><i class="fa-solid fa-phone"></i>    5561384712</p>
+                            </li>
+                            <li>
+                                <p><img src="Image/correo.png" alt=""> Israel_acuna4738@uaeh.edu.mx</p>
+                            </li>
+                            <li>
+                                <p><img src="Image/titulo.png" alt=""> Maestría en Tecnología de Cómputo</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
+                    <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <hr class="w-50 mx-auto">
+                                <p><img src="Image/user.png" alt=""> Eder Geovanni Ramirez Corona</p>
+                            </li>
+                            <li>
+                                <p><i class="fa-solid fa-phone"></i>    5539611685</p>
+                            </li>
+                            <li>
+                                <p><img src="Image/correo.png" alt=""> eder_remirez@uaeh.edu.mx</p>
+                            </li>
+                            <li>
+                                <p><img src="Image/titulo.png" alt=""> Ingenieria en Computación</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </section>
+    
+        </div>
+        <!-- container del footer(referencias y redes sociales) -->
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright : Vargas Balderas Bruno Valmiki
+        </div>
+
+    </footer>
+
+</body>
+
+<!-- librerias Quey,Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b71255937b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+    window.onload = function () {
+
+        animateprogress("#bases", 75);
+        animateprogress("#diseño", 80);
+        animateprogress("#javascript", 75);
+        animateprogress("#php", 70);
+        animateprogress("#java", 70);
+        animateprogress("#ingles", 75);
+
+
+    }
+    document.querySelector("#boton").addEventListener("click", function () {
+        animateprogress("#bases", 75);
+        animateprogress("#diseño", 80);
+        animateprogress("#javascript", 75);
+        animateprogress("#php", 70);
+        animateprogress("#java", 70);
+        animateprogress("#ingles", 75);
+
+    });
+</script>
+
+</html>

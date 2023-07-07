@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Lato',sans-serif; 
+
+}
+
+.offset:before{
+    display: block;
+    content: "";
+}
+
+
+
+ #post-heading{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    background: rgb(0,0,0,0.6) !important;
+    padding: 8px 0;
+    
+
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+    padding-left: 20px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: aqua;
+}
+
+
+
+.heading-content{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.heading-content h5{
+    font-size: 3em;
+    font-weight: 300;
+    color: burlywood;
+    font-family: monospace;
+}
+
+#div-principal , #cuadro{
+    opacity: 0.9;
+    border-radius: 10px;
+    animation: zoomIn;
+    animation-duration: 4s; 
+
+}
+
+.holasoy {
+    animation: backInDown;
+    animation-duration: 4s; 
+  }
+
+.bruno {
+    animation: backInLeft;
+    animation-duration: 4s; 
+  }
+
+.curriculum {
+    animation: backInUp;
+    animation-duration: 4s; 
+  }
+  
+.heading-content h1{
+    font-size: 5em;
+    font-weight: bolder;
+    color: burlywood;
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+.heading-content p{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: black;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+#sobremi{
+    padding-top: 20px;
+}
+#especialidades{
+    padding-top: 50px;
+}
+
+
+
+/*------------------------------sobre mi--------------------------*/
+#sobremi .btn{
+    border: 2px solid transparent;
+    width: 40px;
+    padding: 15px 10px;
+    background: rgb(117, 115, 115);
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+#sobremi .btn a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+#sobremi .btn:hover{
+    border: 2px solid #1ebba3;
+    cursor: pointer;
+}
+
+#sobremi .perfil{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*------------------------------especialidades--------------------------*/
+
+#skills{
+    background-color: rgb(179, 172, 172);
+}
+
+legend{
+    font-weight: bold;
+}
+
+.clear{clear:both;}
+
+#boton{
+
+	width:120px;
+	height:30px;
+}
+
+progress[value] {
+	/* elimino apariencia por defecto */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	/* quito el borde  */
+	border: none;
+
+	width: 270px;
+	height: 30px;
+	
+	
+/* 	estilos al fondo de la barra en mozilla */
+	overflow:hidden;
+	border:1px inset #666;
+	background-color:#D8D8D8;
+	border-radius : 20px ; 
+}
+
+.progress{
+	float:left;
+	margin-right:30px;
+	margin-bottom:20px;
+    height: 30px;
+    background-color: rgb(179, 172, 172);
+}
+
+.progress span{
+	
+	font-weight:bold;
+    font-size: 15px;
+	
+}
+
+.progress p{
+	
+	font-size: 20px;
+	
+}
+
+/* compatibilidad de colores en Firefox, Chrome y Safari */
+progress::-moz-progress-bar{ 
+	background: #FF8000;
+	background: rgba(255,175,75,1);
+	background: -moz-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,175,75,1)), color-stop(100%, rgba(255,146,10,1)));
+	background: -webkit-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=1 );	
+	border-radius : 20px ; 
+	} 
+progress::-webkit-progress-value { 
+	background: #FF8000;
+	background: rgba(255,175,75,1);
+	background: -moz-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,175,75,1)), color-stop(100%, rgba(255,146,10,1)));
+	background: -webkit-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=1 );
+	border-radius : 20px ; 	
+
+}
+progress::-webkit-progress-bar { 
+	background-color:#D8D8D8;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+	border-radius : 20px ; 
+			
+}
+
+/*------------------------------formacion--------------------------*/
+
+#formacion li{
+    font-size: 20px;
+}
+
+/*------------------------------proyectos--------------------------*/
+
+.proyectos{
+    background-color: rgb(179, 172, 172);
+}
+
+/*------------------------------Query--------------------------*/
+@media screen and (max-width:810px){
+    .navbar{
+        letter-spacing: 0.1em;
+        padding: 10px 0;
+    }
+    .heading-content{
+        top: 10%;
+    }
+    .heading-content h5{
+        font-size: 2em;
+    }
+    .heading-content h1{
+        font-size: 3em;
+    }
+    .heading-content p{
+        font-size: 0.9em;
+    }
+
+}
+
+@media screen and (max-width:479px){
+    .navbar{
+        letter-spacing: 0.1em;
+        padding: 7px 0;
+    }
+
+    .heading-content{
+        top: 10%;
+    }
+
+    .heading-content h5{
+        font-size: 20px;
+        
+    }
+    .heading-content h1{
+        font-size: 2em;
+    }
+    .heading-content p{
+        font-size: 0.7em;
+    }
+    /* smartphones */
+}
