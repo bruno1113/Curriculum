@@ -107,7 +107,7 @@ body{
     padding-top: 20px;
 }
 #especialidades{
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 
@@ -244,6 +244,10 @@ progress::-webkit-progress-bar {
 
 .proyectos{
     background-color: rgb(179, 172, 172);
+}
+
+#proyectos{
+    padding-top: 20px;
 }
 
 /*------------------------------Query--------------------------*/
